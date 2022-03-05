@@ -1,3 +1,5 @@
+# 1st day
+
 1.  q. what is react and why we use react ? => reusable component code and code sepration main goal
 2.  differe between vue and react ?
 
@@ -14,4 +16,58 @@
         11. in vue js there is main.js file, in react index.js file
 
 3.  to see converted App.js code -> go to inspect element ->source -> static folder and search App() function in that.
-    this, how react tranfer code jsx to js in background for whole app.
+    this, how react transfer code jsx to js in background for whole app.
+
+
+# 2nd day
+
+1. understanding type of data is very important. for example for example if you want to show date on front end .if you directly show date as {date} than it's not work.  user don't know that, in which format date should pass as object. that's why typescript should use here.
+2. learning props and compositions.
+3. createElement and use of 'react library
+4. convert function() to arrow function.
+5. state is use only in function() neither outer side nor in return function . we also not use in some nested function . use only in  direct first scope. useState always takes two return value. when i learning first time react, than i understand that , its should be  start from first line. but that's not true. it should be in first scope.
+6. define state for form.
+
+        ```
+
+        const [enterTitle, setEnterTitle] = useState("");
+        const [amout, setAmout] = useState("");
+        const [date, setDate] = useState("");
+
+        ```
+
+ **replace above stated to one object**
+
+        ```
+        const [formData, setFormData] = useState({
+        enterTitle: "",
+        amount: "",
+        date: "",
+        });
+
+        ```
+7. if you want to update other forms object than
+
+        ```
+        const titleChangeHandler = (e) => {
+                setFormData({
+                ...formData,
+                enterTitle: e.target.value,
+                });
+        };
+
+        ```
+
+in above react dont give latest updated ...formData so use titleChangeHandler as function . which give  prevState as snapshop which give latest updated formData. in genral both are works proper but may be in some case it's not work well.
+
+        ```
+        setFormData as function
+                const titleChangeHandler = (e) => {
+                        setFormData((prevState) => {
+                        return { ...prevState, enterTitle: e.target.value };
+                        });
+                };
+        ```
+
+8. passing data in props as fuction . this is same as emiiting event in vue js.
+9. what to render component in loop . using map and use conditional basded component.

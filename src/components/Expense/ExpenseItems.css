@@ -1,0 +1,21 @@
+.expense-item {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: beige;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.expense-date {}
+
+.main-date {
+    flex-basis: 15%;
+}
+
+.expense-title {}
+
+.expense-amount {
+    margin-left: auto;
+}
