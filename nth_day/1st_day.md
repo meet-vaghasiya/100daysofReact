@@ -71,3 +71,19 @@ in above react dont give latest updated ...formData so use titleChangeHandler as
 
 8. passing data in props as fuction . this is same as emiiting event in vue js.
 9. what to render component in loop . using map and use conditional basded component.
+10. need to learn more about object and how destructure works in object in js. because react doent change nested object
+11. in inline style react requried {{ }} two cursly bracess. one for  react reqrueid defualt object.{ }  and in another second for style.because react accept styles in object form like { color:'red', backgroundColor: 'green' },
+```
+  style={{ color:'red',backgroundColor:'green' }}
+```
+
+# 3nd day
+
+1. if you import classes from '../Card.module.css  and use className={classes.input} than it should be present as .input in module css file .otherwise it will show an undefine class in dom.
+2. learning useEffect,useReduucer and useContext.
+
+# 4-6 day
+1. making demo for food order app.
+
+
+
